@@ -9,6 +9,7 @@ import {
 } from 'components';
 
 import data from 'data/data';
+import blogcards from 'data/article.json';
 
 export const App = () => {
   return (
@@ -17,7 +18,7 @@ export const App = () => {
         <Heading marginBottom="50px" textAlign="center">
           Task 1
         </Heading>
-        <BlogCard />
+        <BlogCard data={blogcards} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
